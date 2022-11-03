@@ -5,9 +5,102 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.operands,
+.operators {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.comparator,
+.operand,
+.operator,
+.rhs {
+  align-items: center;
+  background-color: #9acd32;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  cursor: move;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-weight: bolder;
+  height: 100px;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+}
+
+.comparator,
+.operator,
+.rhs {
+  background-color: #bc8f8f;
+  height: 50px;
+}
+
+.space {
+  width: 50px;
+}
+
+.comparator,
+.rhs {
+  cursor: pointer;
+}
+
+.canvas {
+  align-items: center;
+  border: 5px dashed grey;
+  display: flex;
+  height: 150px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.submit {
+  background-color: #6495ed;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.remove {
+  display: flex;
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 15px;
+  width: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.remove:hover {
+  color: bisque;
+}
+
+.canvas>.operand,
+.canvas>.operator,
+.canvas>.comparator {
+  position: relative;
+  cursor: pointer;
+}
+
+.canvas>.rhs {
+  position: relative;
+  cursor: pointer;
+  height: 100px;
+  background-color: darksalmon;
 }
