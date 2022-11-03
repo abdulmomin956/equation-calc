@@ -22,7 +22,7 @@ function App() {
   }
 
   useEffect(() => {
-    fetch('http://localhost:5000/operands').then(res => res.json()).then(data => setOperands(data))
+    fetch('https://equation-calc-backend.onrender.com/operands').then(res => res.json()).then(data => setOperands(data))
   }, [])
 
   const operators = [
