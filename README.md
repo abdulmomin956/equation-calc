@@ -1,3 +1,3 @@
-# Getting Started with Create React App
+https://equation-calc.web.app/
 
 
